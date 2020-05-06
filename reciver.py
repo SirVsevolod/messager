@@ -19,4 +19,5 @@ while True:
 		print(massage['text'])
 		print()
 		last_massage_time = massage["time"]
+		
 	sleep(1)
