@@ -18,7 +18,9 @@ def hello():
 def status():
     return {
     	"status": True,
-    	"time":datetime.now().strftime("%H:%M:%S")
+    	"time":datetime.now().strftime("%H:%M:%S"),
+        "messages_count":len(messages),
+        "users_count":len(users)
     }
 
 
@@ -32,7 +34,7 @@ def send():
 	username = data['username']
 	password = data['password']
 	text = data['text']
-	
+
 	if username in users:
 		real_password = users[username]
 		if real_password != password:

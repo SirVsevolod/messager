@@ -14,6 +14,3 @@ while True:
 	if not r.json()["ok"]:
 		print("Access denied")
 		break
-
-
-
