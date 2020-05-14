@@ -16,7 +16,7 @@ def hello():
 
 @app.route("/status")
 def status():
-    return {
+    return status {
     	"status": True,
     	"time":datetime.now().strftime("%H:%M:%S"),
         "messages_count":len(messages),
